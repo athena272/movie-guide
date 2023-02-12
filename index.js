@@ -1,4 +1,4 @@
-import { key } from './key.js'
+const key = "88ddafff"
 
 const movieNameReference = document.querySelector("#movie-name")
 const searchBtn = document.querySelector("#search-btn")
