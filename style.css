@@ -31,10 +31,10 @@ body {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1.2rem;
+    /* border: 1px solid red; */
 }
 
-.search-container input,
-.search-container button {
+.search-container input, .search-container button {
     font-size: 0.9rem;
     outline: none;
     border-radius: 0.3rem;
@@ -143,6 +143,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    .search-container {   
+        width: 70%;
+    }
 
     .genre {
         margin: 0 auto;
