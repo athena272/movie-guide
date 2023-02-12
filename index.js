@@ -10,7 +10,7 @@ const result = document.querySelector("#result")
 
 const getMovie = () => {
     const movieName = movieNameReference.value
-    const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`
+    const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`
 
     // case input field is empty
     if (movieName.length <= 0) {
