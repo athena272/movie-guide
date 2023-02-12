@@ -37,12 +37,12 @@ const getMovie = () => {
                                 <div>${data.Genre.split(",").join("</div><div>")}</div>
                             </div>
                         </div>
-                        <div class="datasheet">
-                            <h3>Plot:</h3>
-                            <p>${data.Plot}</p>
-                            <h3>Cast:</h3>
-                            <p>${data.Actors}</p>
-                        </div>
+                    </div>
+                    <div class="datasheet">
+                        <h3>Plot:</h3>
+                        <p>${data.Plot}</p>
+                        <h3>Cast:</h3>
+                        <p>${data.Actors}</p>
                     </div>
                 `
             }
@@ -59,4 +59,14 @@ const getMovie = () => {
 }
 
 searchBtn.addEventListener("click", getMovie)
+
 window.addEventListener("load", getMovie)
+window.addEventListener("keypress", (ev) => {
+    // If the user presses the "Enter" key on the keyboard
+    if (ev.key === "Enter") {
+        // Cancel the default action, if needed
+        ev.preventDefault();
+        // Trigger the button element with a click
+        getMovie()
+    }
+})
