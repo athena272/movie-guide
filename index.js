@@ -1,8 +1,4 @@
-// API KEY from email'
-// https://www.omdbapi.com/
-// https://www.omdbapi.com/apikey.aspx
-
-const key = "88ddafff"
+import { key } from './key.js'
 
 const movieNameReference = document.querySelector("#movie-name")
 const searchBtn = document.querySelector("#search-btn")
