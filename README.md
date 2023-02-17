@@ -1,6 +1,6 @@
 # Movie Guide
 ## Sobre o projeto
-Um site feito para pesquisar por seus filmes favoritos⭐
+Um site feito para pesquisar por seus filmes favoritos⭐. Aqui, você pode encontrar uma ampla seleção de filmes de diferentes gêneros e épocas, e pesquisar por título das obras. O site apresenta uma interface fácil de usar e navegar, permitindo que você encontre rapidamente o que está procurando. Além disso, oferecemos informações detalhadas sobre cada filme, incluindo sinopse, elenco e outras informações relevantes.
 ## Link para [Acesso](https://athena272.github.io/movie-guide/)
 ## Link para [API](https://www.omdbapi.com/)
 
