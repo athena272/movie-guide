@@ -31,10 +31,13 @@ body {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1.2rem;
+    position: relative;
+    margin-bottom: 20px;
     /* border: 1px solid red; */
 }
 
-.search-container input, .search-container button {
+.search-container input,
+.search-container button {
     font-size: 0.9rem;
     outline: none;
     border-radius: 0.3rem;
@@ -55,6 +58,11 @@ body {
     background-color: #ffb92a;
     border: none;
     cursor: pointer;
+}
+
+#movie-name:focus {
+    outline: none;
+    border-color: #ffb92a;
 }
 
 #result {
@@ -143,9 +151,13 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    .search-container {   
+    .search-container {
         display: flex;
         flex-direction: column;
+    }
+
+    .search-container.fixed {
+        margin-top: 85%;
     }
 
     .genre {
@@ -158,7 +170,7 @@ p {
     .genre div {
         margin: 2% 0;
     }
-    
+
     .container {
         font-size: 14px;
     }
@@ -168,7 +180,7 @@ p {
         width: auto;
         max-height: 10.8em;
     }
-    
+
     .info {
         grid-template-columns: 1fr;
     }
