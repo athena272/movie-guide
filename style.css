@@ -156,10 +156,7 @@ p {
         flex-direction: column;
     }
 
-    .search-container.fixed {
-        margin-top: 90%;
-    }
-
+    
     .genre {
         margin: 0 auto;
         flex-direction: column;
