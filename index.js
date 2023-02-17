@@ -77,10 +77,6 @@ inputSearch.addEventListener("focus", function () {
     searchContainer.classList.add("fixed")
 })
 
-inputSearch.addEventListener("input", function () {
-    searchContainer.classList.add("fixed")
-})
-
 inputSearch.addEventListener("blur", function () {
     searchContainer.classList.remove("fixed")
 })
