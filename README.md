@@ -1,4 +1,4 @@
-# Movie
+# Movie Guide
 ## Sobre o projeto
 Um site feito para pesquisar por seus filmes favoritos⭐
 ## Link para [Acesso](https://athena272.github.io/movie-guide/)
