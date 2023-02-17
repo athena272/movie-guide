@@ -1,11 +1,13 @@
 import { key } from './key.js'
 
-const movieNameReference = document.querySelector("#movie-name")
+const inputSearch = document.querySelector("#movie-name")
 const searchBtn = document.querySelector("#search-btn")
 const result = document.querySelector("#result")
+const searchContainer = document.querySelector(".search-container")
+
 
 const getMovie = () => {
-    const movieName = movieNameReference.value
+    const movieName = inputSearch.value
     const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`
 
     // case input field is empty
@@ -70,3 +72,16 @@ window.addEventListener("keypress", (ev) => {
         getMovie()
     }
 })
+
+inputSearch.addEventListener("focus", function () {
+    searchContainer.classList.add("fixed")
+})
+
+inputSearch.addEventListener("input", function () {
+    searchContainer.classList.add("fixed")
+})
+
+inputSearch.addEventListener("blur", function () {
+    searchContainer.classList.remove("fixed")
+})
+
