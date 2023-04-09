@@ -18,15 +18,15 @@ const getMovie = () => {
             if (data.Response === "True") {
                 result.innerHTML = `
                     <div class="info">
-                        <img src=${data.Poster} class="poster"/>
+                        <img src=${data.Poster} class="poster" loading="lazy" />
                         <div>
                             <h2>${data.Title}</h2>
                             <div class="rating">
                                 <div>
-                                <img src="img/star-filled-48.png" alt="">
-                                <img src="img/star-filled-48.png" alt="">
-                                <img src="img/star-filled-48.png" alt="">
-                                <img src="img/star-filled-48.png" alt="">
+                                <img src="img/star-filled-48.png" alt="" loading="lazy" >
+                                <img src="img/star-filled-48.png" alt="" loading="lazy" >
+                                <img src="img/star-filled-48.png" alt="" loading="lazy" >
+                                <img src="img/star-filled-48.png" alt="" loading="lazy" >
                                 </div>
                                 <h4>${data.imdbRating}</h4>
                             </div>
